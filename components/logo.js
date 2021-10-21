@@ -31,7 +31,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}
           >
-            Takuya Matsuyama
+            Saul Ruiz
           </Text>
         </LogoBox>
       </a>

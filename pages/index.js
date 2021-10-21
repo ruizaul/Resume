@@ -37,7 +37,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack developer based in Japan!
+        Hello, I&apos;m a software engineer student based in México!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -60,7 +60,7 @@ const Home = () => (
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/takuya.jpg"
+            src="/images/saul.jpg"
             alt="Profile image"
           />
         </Box>
@@ -94,7 +94,7 @@ const Home = () => (
           Born in Casas Grandes, Chihuahua, México.
         </BioSection>
         <BioSection>
-          <BioYear>2018 to present</BioYear>
+          <BioYear>2018 - present</BioYear>
          Selected to study software engineering degree at the university of sonora.
         </BioSection>
       
