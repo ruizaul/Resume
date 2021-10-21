@@ -20,7 +20,7 @@ import {
   IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
-  IoLogoDiscord
+  IoLogoLinkedin
 } from 'react-icons/io5'
 
 const Home = () => (
@@ -73,7 +73,7 @@ const Home = () => (
           .
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href="/works">
+          <NextLink href='https://drive.google.com/file/d/12V8m4_eigJv81sFkKRg51HUqkqZjpvV_/view'>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Download CV
             </Button>
@@ -122,7 +122,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @LlamameSaul
+                @ruizaul
               </Button>
             </Link>
           </ListItem>
@@ -134,7 +134,7 @@ const Home = () => (
                 leftIcon={<Icon as={IoLogoTwitter} />}
               
               >
-                @eduardosaul7
+                @LlamameSaul
               </Button>
             </Link>
           </ListItem>
@@ -145,7 +145,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
-                @fimbressaul
+                @eduardosaul7
               </Button>
             </Link>
           </ListItem>
@@ -154,9 +154,9 @@ const Home = () => (
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLogoDiscord} />}
+                leftIcon={<Icon as={IoLogoLinkedin} />}
               >
-                Discord
+               @fimbressaul
               </Button>
             </Link>
           </ListItem>
@@ -169,6 +169,7 @@ const Home = () => (
             </Button>
           </NextLink>
         </Box>
+		
       </Section>
     </Container>
   </Layout>
