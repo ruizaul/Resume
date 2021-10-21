@@ -68,8 +68,8 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Hello, my name is Saul and I am a software engineering student. 
-		  I am currently in eighth semester at the University of Sonora, throughout my studies I have acquired coding skills as well as teamwork and discipline to achieve my goals. 
-		  I am most skilled in: C# and Kotlin.
+		  I am currently in my eighth semester at the Universidad de Sonora, throughout my studies I have acquired coding skills as well as teamwork and discipline to achieve my goals. 
+		  I am most skilled in: C#, JS and Kotlin.
           .
         </Paragraph>
         <Box align="center" my={4}>
@@ -91,7 +91,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2018 - present</BioYear>
-         Selected to study software engineering degree at the university of sonora.
+         Selected to study software engineering degree at the Universidad of Sonora.
         </BioSection>
       
        
@@ -160,15 +160,7 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-        </List> 
-		
-        <Box align="center" my={4}>
-          <NextLink href="/posts">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
+        </List> 	
 		
       </Section>
     </Container>
