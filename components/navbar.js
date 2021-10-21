@@ -71,12 +71,6 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/coming soon..." path={path}>
-            Works
-          </LinkItem>
-          <LinkItem href="/coming soon..." path={path}>
-            Posts
-          </LinkItem>
           <LinkItem
             _target="_blank"
             href="https://github.com/ruizaul/Resume"
@@ -102,23 +96,6 @@ const Navbar = props => {
                 variant="outline"
                 aria-label="Options"
               />
-              <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
-                </MenuItem>
-              </MenuList>
             </Menu>
           </Box>
         </Box>
