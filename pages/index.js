@@ -73,7 +73,7 @@ const Home = () => (
           .
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href='https://drive.google.com/file/d/12V8m4_eigJv81sFkKRg51HUqkqZjpvV_/view'>
+          <NextLink href='https://drive.google.com/file/d/1zA_oWDox0jmdZcA0lzGrAop7LmXCil5Y/view?usp=sharing'>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Download CV
             </Button>
