@@ -18,16 +18,16 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
-        _target={_target}
+        target={target}
         {...props}
       >
         {children}
@@ -38,15 +38,14 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
-
   return (
     <Box
       position="fixed"
       as="nav"
       w="100%"
       bg={useColorModeValue('#ffffff40', '#20202380')}
-      style={{ backdropFilter: 'blur(10px)' }}
-      zIndex={1}
+      css={{ backdropFilter: 'blur(10px)' }}
+      zIndex={2}
       {...props}
     >
       <Container
@@ -71,8 +70,11 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem href="/works" path={path}>
+            Works
+          </LinkItem>
           <LinkItem
-            _target="_blank"
+            target="_blank"
             href="https://github.com/ruizaul/Resume"
             path={path}
             display="inline-flex"
@@ -96,6 +98,17 @@ const Navbar = props => {
                 variant="outline"
                 aria-label="Options"
               />
+              <MenuList>
+                <NextLink href="/" passHref>
+                  <MenuItem as={Link}>About</MenuItem>
+                </NextLink>
+                <NextLink href="/works" passHref>
+                  <MenuItem as={Link}>Works</MenuItem>
+                </NextLink>
+                <MenuItem as={Link} href="https://github.com/ruizaul/Resume">
+                  View Source
+                </MenuItem>
+              </MenuList>
             </Menu>
           </Box>
         </Box>

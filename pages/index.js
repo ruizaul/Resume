@@ -41,7 +41,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Saul Ruiz
           </Heading>
-          <p>Software Engineer Wannabe ( Front End / Android / Design )</p>
+          <p>Software Engineer ( React / Node / MySQL )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -67,13 +67,12 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Hello, my name is Saul and I am a software engineering student. 
-		  I am currently in my eighth semester at the Universidad de Sonora, throughout my studies I have acquired coding skills as well as teamwork and discipline to achieve my goals. 
-		  I am most skilled in: C#, JS and Kotlin.
-          .
+          Former student of Information Systems Engineering at Universidad de
+          Sonora, currently a full stack trainee at Necodex. I love to create
+          new things and always be aware of new technologies.
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href='https://drive.google.com/file/d/1zA_oWDox0jmdZcA0lzGrAop7LmXCil5Y/view?usp=sharing'>
+          <NextLink href="https://drive.google.com/file/d/1esxNiy0qJhLO18SYs0dpTYC1Pl748d--/view?usp=sharing">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Download CV
             </Button>
@@ -91,23 +90,19 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2018 - present</BioYear>
-         Selected to study software engineering degree at the Universidad of Sonora.
+          Selected to study software engineering degree at Universidad of
+          Sonora.
         </BioSection>
-      
-       
+        <BioSection>
+          <BioYear>2022 - present</BioYear>
+          Trainee Full Stack (MERN) at Necodex.
+        </BioSection>
       </Section>
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
-        <Paragraph>
-          Art, 
-		  Music, 
-		  Gaming, 
-		  Anime, 
-		  Calisthenics
-       
-        </Paragraph>
+        <Paragraph>Art, Music, Gaming, Anime, Calisthenics</Paragraph>
       </Section>
 
       <Section delay={0.3}>
@@ -132,7 +127,6 @@ const Home = () => (
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoTwitter} />}
-              
               >
                 @LlamameSaul
               </Button>
@@ -150,19 +144,28 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.linkedin.com/in/fimbressaul/" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/fimbressaul/"
+              target="_blank"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoLinkedin} />}
               >
-               @fimbressaul
+                @fimbressaul
               </Button>
             </Link>
           </ListItem>
-        </List> 	
-		
+        </List>
       </Section>
+      <Box align="center" my={4} mb={10}>
+        <NextLink href="/works" passHref scroll={false}>
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            Look at my work
+          </Button>
+        </NextLink>
+      </Box>
     </Container>
   </Layout>
 )
