@@ -41,7 +41,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Saul Ruiz
           </Heading>
-          <p>Software Engineer ( React / Node / MySQL )</p>
+          <p>Software Engineer ( MERN and Next.js )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -68,8 +68,9 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Former student of Information Systems Engineering at Universidad de
-          Sonora, currently a full stack trainee at Necodex. I love to create
-          new things and always be aware of new technologies.
+          Sonora, currently a full stack MERN developer looking for new
+          opportunities. I love to create new things and always be aware of new
+          technologies.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="https://drive.google.com/file/d/1esxNiy0qJhLO18SYs0dpTYC1Pl748d--/view?usp=sharing">
@@ -94,8 +95,8 @@ const Home = () => (
           Sonora.
         </BioSection>
         <BioSection>
-          <BioYear>2022 - present</BioYear>
-          Trainee Full Stack (MERN) at Necodex.
+          <BioYear>2022 (June) - 2022 (December)</BioYear>
+          Intern Full Stack (MERN) at Necodex.
         </BioSection>
       </Section>
       <Section delay={0.3}>
